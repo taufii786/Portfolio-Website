@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4e82952628.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>    
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi I'm <span>Taufik</span><br>Sayyed From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----About Section---->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>Hello, I'm <span>Taufik Yunus Sayyed</span> and I'm From Nashik Which is in Maharashtra.
+                        I Have Done My Maters Degree in Computer Application form Ashoka Center For Business and Computer Studies.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desigining Web/App interfaces</li>
+                            <li><span>Web Developement</span><br>Web App Developement</li>
+                            <li><span>App Developement</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-01 - 2024-07 </span><br>Intern as a Android Developer at TechManha.infotech</li>
+                            <li><span>2023 - Current</span><br>Full Stack Java Developer</li>
+                            <li><span>2022 - 2023</span><br>Full Stack Web Developer</li>
+                            <li><span>2021 - 2022</span><br>Java Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2024</span><br>MSC(Computer Application)</li>
+                            <li><span>2019-2022</span><br>BSC(Computer Science)</li>
+                            <li><span>2019-2020</span><br>Android App Developement In Java</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---Services--->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developement</h2>
+                <p>"Crafting Responsive, Engaging, and SEO-Optimized Websites Tailored to Your Business Needs"
+                    If you want a more specific focus (e.g., e-commerce, portfolio, or corporate sites), 
+                    feel free to share, and I can adjust accordingly!</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>App Developement</h2>
+                <p>We specialize in creating seamless mobile app solutions that integrate effortlessly with your website, 
+                    enhancing user engagement and accessibility. Let us transform your website into a dynamic, accessible, 
+                    and user-friendly mobile application that delivers value and convenience!</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Portfolio Website</h2>
+                <p>"Creating impactful and responsive web designs."</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----- Portfolio --->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My <span>Work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Work in Progress.......</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Work in Progress........ </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shpping App</h3>
+                    <p>Work in Progress........</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-----Contact--->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact <span>Me</span></h1>
+                <p><i class="fa-solid fa-paper-plane"></i>conact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>9373976930</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?igsh=83hum7nqv2mt&utm_content=7ff45l5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram">    </i></a>
+                </div>
+                <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Youe Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#xA9;  Taufik. Made with <i class="fa-solid fa-heart"></i> by techwolf.infotech.ltd</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks  = document.getElementsByClassName("tab-links");
+    var tabcontents  = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx72B6uPrCjvJzwatt67tRpW_wl0JNg1ep37pwjwzPho516abgnXjfJHzlMTV_XL9Dz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
